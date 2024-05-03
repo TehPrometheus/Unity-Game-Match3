@@ -20,10 +20,7 @@ namespace Match3
         [SerializeField] GameObject ExplosionVFX;
         
         AudioManager audioManager;
-        [SerializeField]
-        private InputActionReference fireTest;        
-        [SerializeField]
-        private InputActionReference playSoundTest;
+
         GridSystem2D<GridObject<Gem>> grid;
 
         InputReader inputReader;
@@ -36,25 +33,18 @@ namespace Match3
         void Start()
         {
             InitializeGrid();
-            fireTest.action.performed += OnSelectGem;
-            playSoundTest.action.performed += PlaySoundTest;
+            inputReader.Fire += OnSelectGem;
         }
 
-        private void PlaySoundTest(InputAction.CallbackContext context)
-        {
-            audioManager.PlayMatch();
-        }
+
 
         private void OnDestroy()
         {
-            fireTest.action.performed -= OnSelectGem;
-            playSoundTest.action.performed -= PlaySoundTest;
+            inputReader.Fire -= OnSelectGem;
         }
 
-        private void OnSelectGem(InputAction.CallbackContext context)
+        private void OnSelectGem()
         {
-            audioManager.PlayWoosh();
-
             var gridPos = grid.GetXY(Camera.main.ScreenToWorldPoint(Input.mousePosition));
 
             if (!IsValidPosition(gridPos) || IsEmptyPosition(gridPos))

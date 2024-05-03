@@ -262,8 +262,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 75fef79fc28c56749b4a2bdd24434e8e, type: 2}
   ease: 5
   ExplosionVFX: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
-  fireTest: {fileID: 708559306228301711, guid: 803ccae225f705345869a5c40bfdcf6d, type: 3}
-  playSoundTest: {fileID: 6365046965698199849, guid: 803ccae225f705345869a5c40bfdcf6d, type: 3}
 --- !u!4 &834845503
 Transform:
   m_ObjectHideFlags: 0
@@ -333,7 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b8968c28e989418d6451155072786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireTest: {fileID: 708559306228301711, guid: 803ccae225f705345869a5c40bfdcf6d, type: 3}
 --- !u!114 &834845506
 MonoBehaviour:
   m_ObjectHideFlags: 0
