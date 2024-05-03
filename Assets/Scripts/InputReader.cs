@@ -10,6 +10,8 @@ namespace Match3
         InputAction selectAction;
         InputAction fireAction;
 
+        [SerializeField]
+        private InputActionReference fireTest;
         public event Action Fire;
         public Vector2 Selected => selectAction.ReadValue<Vector2>(); // This is pretty cool
 
@@ -19,7 +21,7 @@ namespace Match3
             selectAction = playerInput.actions["Select"];
             fireAction = playerInput.actions["Fire"];
 
-            fireAction.performed += OnFire;
+            fireTest.action.performed += OnFire;
         }
 
         public void OnFire(InputAction.CallbackContext context)

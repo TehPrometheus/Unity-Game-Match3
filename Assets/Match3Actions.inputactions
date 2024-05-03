@@ -6,24 +6,6 @@
             "id": "ae2ac0fc-aa27-4499-a1ef-ec1b5277dee2",
             "actions": [
                 {
-                    "name": "Move",
-                    "type": "Button",
-                    "id": "0ee5d785-ef20-4811-a34e-1a67ddf1d9af",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Look",
-                    "type": "Button",
-                    "id": "39c7daae-4fb3-4d97-a8bf-dd43bda968a4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Fire",
                     "type": "Button",
                     "id": "26990f4d-5f19-4fc5-a845-ee340e209432",
@@ -40,31 +22,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "PlaySound",
+                    "type": "Button",
+                    "id": "dc99945a-1ef9-467c-9d07-d91b62fb2599",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "d831333e-79ad-49fd-8ee9-8a126809e520",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0b0adde4-6416-4559-afcb-279f20194730",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "53738504-5da7-4807-b38a-8f5a5b366d62",
@@ -84,6 +53,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3f4dffb-dde6-4935-8103-448ad606564c",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaySound",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
