@@ -4,3 +4,6 @@ This Unity game project is build using the OOP paradigm where I adhere to the 4 
 My newfound insights fall into two categories: OOP programming and Unity specific.
 ## 2.1 - Unity Specific 
 - Only expose a reference if it does **not** originate from the parent game object. If it does, simply keep the reference private and call `GetComponent<>` in `Start()` or `Awake()`. This minimizes the chance of human mistakes.
+
+## 2.2 - OOP 
+- The `InputReader` class serves as a great centralized abstraction for player input with the new input system. This class needs to only be instantiated once. From then on every script that needs input can hold a reference through **aggregation**.
